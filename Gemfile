@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source "http://ruby.taobao.org"
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
@@ -8,7 +8,7 @@ source "http://rubygems.org"
 group :development do
   gem "shoulda", ">= 0"
   gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0.0"
+  gem "bundler", "~> 1.1.3"
   gem "jeweler", "~> 1.8.3"
-  gem "rcov", ">= 0"
+  gem "rcov", "0.9.11"
 end
