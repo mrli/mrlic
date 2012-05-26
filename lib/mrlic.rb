@@ -54,6 +54,11 @@ alias :dm :defind_model
 
 # 操作入口 
 def cdb(*args)
+	putsy <<-EOF
+		以下是描述信息:
+		方法 'cdb' 用来链接数据库的参数依次是(数据库名,ip,数据库用户名,数据库对应用户名的密码)
+		方法 'dm' 用来定义一个类,这个类对应到数据库中的某一表参数分别为(model名,表名,主键)
+	EOF
 	mysql = Mysql.new *args;
 	mysql.connect
 end
