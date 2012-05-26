@@ -35,8 +35,14 @@ end
 # 定义一个model类,对应到数据库中的表
 def defind_model *args
 	class_name = args[0]
+	putsy "要操作的类是:#{class_name}"
+	
 	table = args[1] || "#{class_name}s"
+	putsy "要操作的数据库表是:#{table}"
+	
 	primary_key = args[2]  || "id"
+	putsy "表:#{table} 的主键是:#{primary_key}"
+
 	eval <<-EOF
 		class #{class_name} < ActiveRecord::Base
 			self.table_name = \"#{table}\";
