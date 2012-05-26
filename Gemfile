@@ -7,3 +7,7 @@ group :development do
   gem "jeweler", "~> 1.8.3"
   gem "rcov", "0.9.11"
 end
+
+gem "colored"
+gem "mysql2"
+
