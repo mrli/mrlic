@@ -8,6 +8,7 @@ group :development do
   gem "rcov", "0.9.11"
 end
 
-gem "colored"
-gem "mysql2"
+gem "colored","1.2"
+gem "mysql2","0.3.11"
+gem "activerecord","3.2.2"
 
