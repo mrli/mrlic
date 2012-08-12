@@ -29,6 +29,7 @@ alias :dm :defind_model
 def cdb(*args)
 	mysql = Mysql.new *args;
 	mysql.connect
+	puts "0k"
 end
 
 
