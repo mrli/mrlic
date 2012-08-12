@@ -1,4 +1,5 @@
 #encoding: utf-8
+#! /usr/bin/ruby 
 require File.expand_path("../env",__FILE__)
 require File.expand_path("../connect_db",__FILE__)
 
